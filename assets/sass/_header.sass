@@ -1,4 +1,4 @@
-*body
+body
     font-family: 'Nanum Myeongjo', serif
     padding: 0
     margin: 0
@@ -29,35 +29,31 @@
     margin: 0 !important
     padding: 0 !important
     font-style: italic
+
 .white
     color: white
     
     
 /* -------------------------- CAROUSEL NAVBAR -------------- /* 
-.nav
-    padding: 100px 30px
-    margin: 0 30px    
-    a:hover
-        background-color: #b83535
-.nav a 
-    list-style: none
-    text-decoration: none
-    padding: 20px 50px
-    text-transform: uppercase
-    color: white
-    font-size: 16px
-    border-top: white 1px solid
-    border-bottom: white 1px solid
-.nav img
-    height: 75px
-.navbar
+
+header
+    position: relative
+.james
     position: absolute
     top: 0
-    z-index: 9999
-    padding: 0 !important
-    margin: 0 !important
-
-
+    z-index: 1000
+    width: 100%
+    .navbar-collapse
+        justify-content: center
+        ul
+            border-top: white solid 1px
+            border-bottom: white solid 1px
+            a 
+                color: white !important
+                text-transform: uppercase
+                padding: 15px 40px!important
+            a:hover
+                background-color: #b83535
 #carouselExampleIndicators
     position: relative
     height: 100vh
@@ -67,6 +63,8 @@
         width: 10px !important
         border-radius: 50%
         padding: 5px
+.cems 
+    padding: 0 !important     
 #carouselExampleIndicators .carousel-inner
     position: relative
     height: 100%
@@ -86,7 +84,7 @@
     height: 100%
     width: 100%
     background: url("../img/banner1.jpg")
-    background-size: 100%
+    background-size: cover
     background-position: center
 
 #carouselExampleIndicators .carousel-inner .carousel-item .info 
@@ -109,14 +107,61 @@
     color: #000
     border-radius: 25px
     margin-right: 10px
+    text-transform: uppercase
+    border: none
 .but2
     padding: 20px
     border-radius: 25px
     margin-left: 10px
+    color: white
+    text-transform: uppercase
+    border: none
+
 
     
 
+
     /* ------------------------- CAROUSEL NAVBAR END ------------*/
+
+
+@media screen and (max-width: 991px)
+    .titreDeco
+        width: 100%
+    .info
+        font-size: 0.5rem
+    #carouselExampleIndicators .carousel-inner .carousel-item .info 
+        p
+            font-size: 2rem
+            font-style: italic
+            padding-bottom: 20px
+        span
+            text-transform: uppercase
+    .james 
+        .navbar-collapse 
+            ul
+                border-top: none!important
+                border-bottom: none!important
+
+
+@media screen and (min-width: 992px) and (max-width: 1012px)
+
+.james
+    position: absolute
+    top: 0
+    z-index: 1000
+    width: 100%
+    font-size: 0.8rem
+    .navbar-collapse
+        justify-content: center
+        ul
+            border-top: white solid 1px
+            border-bottom: white solid 1px
+            a 
+                color: white !important
+                text-transform: uppercase
+            a:hover
+                background-color: #b83535
+
 
 
 

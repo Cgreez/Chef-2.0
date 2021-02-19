@@ -1,9 +1,9 @@
-* body {
+body {
   font-family: "Nanum Myeongjo", serif;
   padding: 0;
   margin: 0;
 }
-* body p {
+body p {
   margin: 0;
   padding: 0;
 }
@@ -51,35 +51,30 @@
 }
 
 /* -------------------------- CAROUSEL NAVBAR -------------- /*  */
-.nav {
-  padding: 100px 30px;
-  margin: 0 30px;
-}
-.nav a:hover {
-  background-color: #b83535;
+header {
+  position: relative;
 }
 
-.nav a {
-  list-style: none;
-  text-decoration: none;
-  padding: 20px 50px;
-  text-transform: uppercase;
-  color: white;
-  font-size: 16px;
-  border-top: white 1px solid;
-  border-bottom: white 1px solid;
-}
-
-.nav img {
-  height: 75px;
-}
-
-.navbar {
+.james {
   position: absolute;
   top: 0;
-  z-index: 9999;
-  padding: 0 !important;
-  margin: 0 !important;
+  z-index: 1000;
+  width: 100%;
+}
+.james .navbar-collapse {
+  justify-content: center;
+}
+.james .navbar-collapse ul {
+  border-top: white solid 1px;
+  border-bottom: white solid 1px;
+}
+.james .navbar-collapse ul a {
+  color: white !important;
+  text-transform: uppercase;
+  padding: 15px 40px !important;
+}
+.james .navbar-collapse ul a:hover {
+  background-color: #b83535;
 }
 
 #carouselExampleIndicators {
@@ -92,6 +87,10 @@
   width: 10px !important;
   border-radius: 50%;
   padding: 5px;
+}
+
+.cems {
+  padding: 0 !important;
 }
 
 #carouselExampleIndicators .carousel-inner {
@@ -117,7 +116,7 @@
   height: 100%;
   width: 100%;
   background: url("../img/banner1.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
 }
 
@@ -145,13 +144,63 @@
   color: #000;
   border-radius: 25px;
   margin-right: 10px;
+  text-transform: uppercase;
+  border: none;
 }
 
 .but2 {
   padding: 20px;
   border-radius: 25px;
   margin-left: 10px;
+  color: white;
+  text-transform: uppercase;
+  border: none;
   /* ------------------------- CAROUSEL NAVBAR END ------------*/
+}
+
+@media screen and (max-width: 991px) {
+  .titreDeco {
+    width: 100%;
+  }
+
+  .info {
+    font-size: 0.5rem;
+  }
+
+  #carouselExampleIndicators .carousel-inner .carousel-item .info p {
+    font-size: 2rem;
+    font-style: italic;
+    padding-bottom: 20px;
+  }
+  #carouselExampleIndicators .carousel-inner .carousel-item .info span {
+    text-transform: uppercase;
+  }
+
+  .james .navbar-collapse ul {
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+}
+.james {
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  font-size: 0.8rem;
+}
+.james .navbar-collapse {
+  justify-content: center;
+}
+.james .navbar-collapse ul {
+  border-top: white solid 1px;
+  border-bottom: white solid 1px;
+}
+.james .navbar-collapse ul a {
+  color: white !important;
+  text-transform: uppercase;
+}
+.james .navbar-collapse ul a:hover {
+  background-color: #b83535;
 }
 
 .background-deco {
@@ -246,6 +295,7 @@
 
 .chefs {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 90%;
   margin: auto;
@@ -282,6 +332,7 @@
   justify-content: center;
   padding: 30px;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .input input {
@@ -308,6 +359,7 @@
 .blog {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .blog img {
   border-radius: 5%;
@@ -347,12 +399,10 @@
 }
 
 .testi-client {
-  display: flex;
-  align-items: center;
-  width: 70%;
   padding: 20px;
 }
-.testi-client img {
+
+.testiImg {
   height: 175px;
   border-radius: 50%;
   border: 2px solid white;
@@ -396,6 +446,7 @@
 
 .foot {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 80%;
   margin: auto;
@@ -461,6 +512,94 @@
 }
 .social-media i {
   padding-right: 20px;
+}
+
+@media screen and (max-width: 599px) {
+  .background-deco {
+    padding: 0;
+  }
+
+  .bg-book {
+    margin: 0;
+    width: 100%;
+  }
+
+  .contact-page {
+    width: 80%;
+  }
+
+  .text-main1 {
+    width: 90%;
+  }
+
+  .blog-text {
+    margin: 80px auto;
+  }
+
+  .foot {
+    width: 100%;
+  }
+
+  .foot-1 {
+    width: 100%;
+  }
+
+  .foot-2 {
+    width: 100%;
+  }
+
+  .foot-3 {
+    width: 100%;
+  }
+
+  .tags span {
+    margin: 10px 0;
+  }
+
+  .blog-art {
+    padding: 10px;
+    width: 100%;
+  }
+  .blog-art img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .bg-book {
+    width: 100%;
+  }
+
+  .contact-page {
+    width: 80%;
+  }
+
+  .foot {
+    width: 100%;
+  }
+
+  .foot-1 {
+    width: 100%;
+  }
+
+  .foot-2 {
+    width: 100%;
+  }
+
+  .foot-3 {
+    width: 100%;
+  }
+
+  .tags span {
+    margin: 10px 0;
+  }
+
+  .blog-art {
+    padding: 10px;
+    width: 100%;
+  }
+  .blog-art img {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

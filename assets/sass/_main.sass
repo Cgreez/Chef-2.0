@@ -80,6 +80,7 @@
 
 .chefs
     display: flex
+    flex-wrap: wrap
     justify-content: center
     width: 90%
     margin: auto
@@ -117,6 +118,7 @@
     justify-content: center
     padding: 30px
     width: 100%
+    flex-wrap: wrap
 .input
 
     input
@@ -145,6 +147,7 @@
 .blog
     display: flex
     justify-content: center
+    flex-wrap: wrap
 
     img
         border-radius: 5%
@@ -168,7 +171,9 @@
 
 
 
-
+////////////////////////////
+    //  tesimonial
+////////////////////////////
 
 .bg-testi
     background-image: url(../img/testimonials_background.jpg)
@@ -181,17 +186,16 @@
     margin: auto
 
 .testi-client
-    display: flex
-    align-items: center
-    width: 70%
+    // display: flex
+    // align-items: center
+    // width: 70%
     padding: 20px
-
-    img
-        height: 175px
-        border-radius: 50%
-        border: 2px solid white
-        margin: 20px
-        border: #d1cece solid 3px
+.testiImg
+    height: 175px
+    border-radius: 50%
+    border: 2px solid white
+    margin: 20px
+    border: #d1cece solid 3px
 .testi-text
     border-radius: 10px
     border: 1px solid white
@@ -225,6 +229,7 @@
 
 .foot
     display: flex
+    flex-wrap: wrap
     justify-content: center
     width: 80%
     margin: auto
@@ -277,3 +282,65 @@
     padding: 30px 0
     i
         padding-right: 20px
+
+
+
+
+
+////////////////////
+        //MEDIA
+////////////////////
+    
+
+@media screen and (max-width: 599px)
+    .background-deco
+        padding: 0
+    .bg-book 
+        margin: 0
+        width: 100%
+    .contact-page
+        width: 80%
+    .text-main1
+        width: 90%
+    .blog-text
+        margin: 80px auto
+    .foot 
+        width: 100%
+    .foot-1
+        width: 100%
+    .foot-2
+        width: 100%
+    .foot-3
+        width: 100%
+    .tags 
+        span 
+            margin: 10px 0
+    .blog-art
+        padding: 10px
+        width: 100%
+        img 
+            width: 100%
+
+
+
+@media screen and (min-width: 600px) and (max-width:1200px)
+    .bg-book
+        width: 100%
+    .contact-page
+        width: 80%
+    .foot 
+        width: 100%
+    .foot-1
+        width: 100%
+    .foot-2
+        width: 100%
+    .foot-3
+        width: 100%
+    .tags 
+        span 
+            margin: 10px 0
+    .blog-art
+        padding: 10px
+        width: 100%
+        img 
+            width: 100%
